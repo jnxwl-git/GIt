@@ -1,0 +1,22 @@
+ //Настройка пользователя
+git config --global user.name "e.kandaurov"
+git config --global user.email "jnxwl-git@yandex.ru"
+
+git config -l
+
+//commands
+git status
+
+git add *
+
+git commit -m "comment"
+
+git log
+
+git log -1 -p
+
+git checkout -- <file>  // revert changes
+
+git diff --staged // разница между staged и последним коммитом
+
+git push origin

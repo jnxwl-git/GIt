@@ -1,0 +1,13 @@
+git checkout <hash>
+
+
+git checkout master //back
+
+
+git commit --amend //edit comment
+
+
+git reset --hard HEAD~1...4 //back to 1...4 commit with destroy previous
+
+
+git reset --soft HEAD~1...4 //delete history without changes to files

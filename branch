@@ -1,0 +1,70 @@
+
+
+
+FIX_ERRROR ==> VER_1 ==> VER_2 ==> VER_3 ==> VER_4
+
+                                               |
+
+MASTER     ==> VER_1 ==> VER_2 ==> VER_3 ==> VER_4 ==> VER_4.1 ==> VER_5
+
+                                                          |
+
+ADD_LINK   ==> VER_1 ==> VER_2 ==> VER_3 ==> VER_4 ==> VER_4.1 ==> VER_5
+
+
+
+
+git init myapp
+
+echo "123" > file.txt
+
+git add .
+
+git commit -m "First commit"
+
+git branch
+
+git log
+
+
+echo "v2" > file.txt
+
+git add .
+
+git commit -m "v2"
+
+
+echo "v3" > file.txt
+
+git add .
+
+git commit -m "v3"
+
+git branch fix_error  (git branch -d fix_error)
+
+git checkout fix_error (git checkou0t -b fix_error)
+
+
+echo "fix_v4" > file.txt
+
+git add .
+
+git commit -m "fix_error_v4"
+
+git log
+
+
+git checkout master
+
+git merge fix_error
+
+git branch -d fix_error
+
+
+git checkout -b test
+
+echo "fix_v5" > file.txt
+
+git add .
+
+git commit -m "v5"
